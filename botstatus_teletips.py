@@ -13,15 +13,15 @@ import os
 
 app = Client(
     name = "botstatus_teletips",
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"],
+    api_id = 20499664,
+    api_hash = "4aa32248e08a484df4221f46e6925781",
     session_string = os.environ["SESSION_STRING"]
 )
 TIME_ZONE = os.environ["TIME_ZONE"]
-BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
-CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
+BOT_LIST = [i.strip() for i in ("AcceptTGusersbot iMoviesRobot IAnimeHubFilesBot").split(' ')]
+CHANNEL_OR_GROUP_ID = -1004064588162
 MESSAGE_ID = int(os.environ["MESSAGE_ID"])
-BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
+BOT_ADMIN_IDS = [int(i.strip()) for i in ("1353788579 1163343128").split(' ')]
 
 async def main_teletips():
     async with app:
